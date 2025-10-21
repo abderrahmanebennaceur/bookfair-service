@@ -1,4 +1,4 @@
-import { BookOpen, Send, Search, Package, Users, MapPin, Calendar, Clock, Star, Facebook, Instagram, MessageCircle, Send as TelegramIcon } from 'lucide-react';
+import { BookOpen, Send, Search, Package, Users, MapPin, Calendar, Clock, Star, Facebook, Instagram, MessageCircle, Send as TelegramIcon, Truck } from 'lucide-react';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               من معرض الجزائر الدولي للكتاب مباشرة
             </h2>
             <p className="text-xl md:text-2xl mb-12 text-amber-50 leading-relaxed">
-              لا تستطيع حضور المعرض؟ نحن نوفر لك الكتب التي تحتاجها من معرض الجزائر الدولي للكتاب وتوصيلها إلى باب منزلك
+              لا تستطيع حضور المعرض؟ نحن نوفر لك الكتب التي تحتاجها من معرض الجزائر الدولي للكتاب و توصيلها إلى باب منزلك
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="bg-white text-amber-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-50 transition-all transform hover:scale-105 shadow-lg">
@@ -54,18 +54,18 @@ function App() {
               </div>
               <div className="md:w-2/3 space-y-6 text-right">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  مرحباً بكم! أنا عاشق للكتب والقراءة، وأحضر معرض الجزائر الدولي للكتاب منذ سنوات طويلة. خلال هذه السنوات، لاحظت أن الكثير من الأصدقاء والمعارف لا يستطيعون حضور المعرض بسبب ظروف العمل أو المسافة أو الوقت.
+                  مرحباً بكم! أنا عبد الرحمن عاشق للكتب و القراءة، و أحضر معرض الجزائر الدولي للكتاب منذ سنوات طويلة. خلال هذه السنوات، لاحظت أن الكثير من الأصدقاء و المعارف لا يستطيعون حضور المعرض بسبب ظروف العمل أو المسافة أو الوقت.
                 </p>
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  من هنا جاءت فكرة هذه الخدمة - أن أكون جسراً بينك وبين الكتب التي تحتاجها. أتجول في المعرض، أبحث عن الكتب المطلوبة، وأوصلها إليك أينما كنت في الجزائر العاصمة وضواحيها.
+                  من هنا جاءت فكرة هذه الخدمة - أن أكون جسراً بينك و بين الكتب التي تحتاجها. أتجول في المعرض، أبحث عن الكتب المطلوبة، و أوصلها إليك أينما كنت.
                 </p>
                 <div className="flex flex-wrap gap-8 pt-6">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-amber-700">+500</div>
+                    <div className="text-4xl font-bold text-amber-700">+300</div>
                     <div className="text-gray-600 mt-2">كتاب تم توصيله</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-amber-700">5+</div>
+                    <div className="text-4xl font-bold text-amber-700">3+</div>
                     <div className="text-gray-600 mt-2">سنوات من الخبرة</div>
                   </div>
                 </div>
@@ -86,25 +86,25 @@ function App() {
                 icon: <Send className="w-10 h-10" />,
                 number: "1",
                 title: "أرسل طلبك",
-                description: "أرسل لنا اسم الكتاب والمؤلف ودار النشر عبر وسائل التواصل الاجتماعي"
+                description: "أرسل لنا اسم الكتاب و المؤلف و دار النشر عبر وسائل التواصل الاجتماعي"
               },
               {
                 icon: <Search className="w-10 h-10" />,
                 number: "2",
                 title: "نبحث عن الكتاب",
-                description: "نتجول في المعرض ونبحث عن الكتاب المطلوب في جميع الأجنحة"
+                description: "نتجول في المعرض و نبحث عن الكتاب المطلوب في جميع الأجنحة"
               },
               {
                 icon: <Package className="w-10 h-10" />,
                 number: "3",
                 title: "التأكيد والدفع",
-                description: "نرسل لك صورة الكتاب والسعر، وبعد موافقتك نشتريه"
+                description: "نرسل لك صورة الكتاب و السعر النهائي، و بعد إتمام التحويل البنكي نباشر بشراء الكتاب"
               },
               {
-                icon: <Send className="w-10 h-10" />,
+                icon: <Truck className="w-10 h-10" />,
                 number: "4",
                 title: "التوصيل",
-                description: "نوصل الكتاب إلى عنوانك في الجزائر العاصمة وضواحيها"
+                description: "نوصل الكتاب إلى عنوانك في جميع الولايات بعد إتمام عملية الشراء"
               }
             ].map((step, index) => (
               <div key={index} className="relative">
@@ -152,8 +152,12 @@ function App() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-2 text-gray-800">رسوم الخدمة</h3>
-                    <p className="text-gray-600 mb-2">تختلف حسب عدد الكتب والجهد المبذول في البحث</p>
-                    <p className="text-amber-700 font-semibold">50 - 300 دج للكتاب الواحد</p>
+                    <p className="text-gray-600 mb-2">تختلف حسب عدد الكتب</p>
+                    <div className="space-y-1">
+                      <p className="text-amber-700 font-semibold">كتاب واحد: 300 دج</p>
+                      <p className="text-amber-700 font-semibold">من 5 إلى 9 كتب: 500 دج</p>
+                      <p className="text-amber-700 font-semibold">10 كتب أو أكثر: 1000 دج</p>
+                    </div>
                   </div>
                 </div>
 
@@ -168,14 +172,14 @@ function App() {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-2 text-gray-800">التوصيل</h3>
                     <p className="text-gray-600 mb-2">يعتمد على المنطقة والمسافة</p>
-                    <p className="text-amber-700 font-semibold">200 - 500 دج</p>
+                    <p className="text-amber-700 font-semibold">500 - 1600 دج</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-10 p-6 bg-amber-800 text-white rounded-xl text-center">
-                <p className="text-lg mb-2">مثال: كتاب بسعر 1000 دج</p>
-                <p className="text-3xl font-bold">المجموع: 1000 + 150 + 300 = 1450 دج</p>
+                <p className="text-lg mb-2">مثال: كتاب بسعر 1000 دج الى بسكرة</p>
+                <p className="text-3xl font-bold">المجموع: 1000 + 300 + 950 = 2250 دج</p>
               </div>
             </div>
           </div>
@@ -195,22 +199,22 @@ function App() {
             <p className="text-xl md:text-2xl mb-12 text-amber-50">اختر وسيلة التواصل المفضلة لديك واطلب كتابك اليوم</p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
+              <a href="https://facebook.com/abderrahmanebennaceur0" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
                 <Facebook className="w-16 h-16 mx-auto mb-4 text-blue-600 group-hover:scale-110 transition-transform" />
                 <p className="font-bold text-gray-800">فيسبوك</p>
               </a>
 
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
+              <a href="https://instagram.com/abderrahmanebennaceur1/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
                 <Instagram className="w-16 h-16 mx-auto mb-4 text-pink-600 group-hover:scale-110 transition-transform" />
                 <p className="font-bold text-gray-800">انستغرام</p>
               </a>
 
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
+              <a href="https://wa.me/message/QCUF4ZO63FRCE1" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
                 <MessageCircle className="w-16 h-16 mx-auto mb-4 text-green-600 group-hover:scale-110 transition-transform" />
                 <p className="font-bold text-gray-800">واتساب</p>
               </a>
 
-              <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
+              <a href="https://t.me/abderrahmanebennaceur/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl p-8 hover:bg-amber-50 transition-all transform hover:scale-110 shadow-xl group">
                 <TelegramIcon className="w-16 h-16 mx-auto mb-4 text-blue-500 group-hover:scale-110 transition-transform" />
                 <p className="font-bold text-gray-800">تيليجرام</p>
               </a>
@@ -254,7 +258,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-800">مهلة الطلبات</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                يمكنك طلب الكتب طوال فترة انعقاد المعرض. يُفضل إرسال الطلب قبل نهاية المعرض بيومين على الأقل لضمان توفر الوقت الكافي للبحث والشراء.
+                يمكنك طلب الكتب طوال فترة انعقاد المعرض. يُفضل إرسال الطلب قبل نهاية المعرض بيوم على الأقل لضمان توفر الوقت الكافي للبحث والشراء.
               </p>
             </div>
 
@@ -266,8 +270,8 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-800">مناطق التوصيل</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                نوصل إلى جميع أنحاء الجزائر العاصمة وضواحيها: بئر مراد رايس، الدار البيضاء، باب الزوار، حسين داي، القبة، برج الكيفان، وغيرها من الأحياء.
-              </p>
+  نوصل إلى <span className="font-semibold text-amber-700">جميع ولايات الجزائر</span> من أقصى الشمال إلى أقصى الجنوب. سواء كنت في وهران، قسنطينة، باتنة، غرداية، تمنراست أو أي ولاية أخرى، كتابك سيصل إليك أينما كنت.
+</p>
             </div>
 
             <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-lg border-r-4 border-amber-600">
@@ -278,7 +282,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-800">مدة التوصيل</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                عادة ما يتم التوصيل في نفس يوم الشراء أو في اليوم التالي، حسب توفر الكتاب وموقعك الجغرافي. سنبقيك على اطلاع دائم بحالة طلبك.
+                عادة ما يتم التوصيل في نفس يوم الشراء أو في اليوم التالي، حسب توفر الكتاب و موقعك الجغرافي. سنبقيك على اطلاع دائم بحالة طلبك.
               </p>
             </div>
 
@@ -290,7 +294,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-800">حالة الكتب</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                جميع الكتب التي نوصلها جديدة تماماً ومباشرة من المعرض. نحرص على حزمها بشكل آمن لضمان وصولها إليك في حالة ممتازة.
+                جميع الكتب التي نوصلها جديدة تماماً و مباشرة من المعرض. نحرص على حزمها بشكل آمن لضمان وصولها إليك في حالة ممتازة.
               </p>
             </div>
           </div>
@@ -362,16 +366,16 @@ function App() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8">
-                <div className="text-5xl font-bold text-amber-700 mb-2">1000+</div>
+                <div className="text-5xl font-bold text-amber-700 mb-2">1255+</div>
                 <p className="text-gray-700 font-semibold">ناشر ودار نشر</p>
               </div>
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8">
-                <div className="text-5xl font-bold text-amber-700 mb-2">40+</div>
+                <div className="text-5xl font-bold text-amber-700 mb-2">49+</div>
                 <p className="text-gray-700 font-semibold">دولة مشاركة</p>
               </div>
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8">
-                <div className="text-5xl font-bold text-amber-700 mb-2">2M+</div>
-                <p className="text-gray-700 font-semibold">زائر سنوياً</p>
+                <div className="text-5xl font-bold text-amber-700 mb-2">4.3+</div>
+                <p className="text-gray-700 font-semibold">مليون زائر سنوياً</p>
               </div>
             </div>
           </div>
@@ -384,31 +388,43 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-amber-900">الأسئلة الشائعة</h2>
           <div className="max-w-4xl mx-auto space-y-6">
             {[
-              {
-                question: "هل تضمنون توفر الكتاب المطلوب؟",
-                answer: "نبذل قصارى جهدنا للبحث عن الكتاب في جميع الأجنحة، ولكن لا يمكن الضمان بنسبة 100% حيث يعتمد ذلك على توفر الكتاب في المعرض. سنعلمك فوراً إذا لم نجد الكتاب."
-              },
-              {
-                question: "كيف يتم الدفع؟",
-                answer: "يتم الدفع عند استلام الكتاب. نرسل لك صورة الكتاب والسعر النهائي قبل الشراء، وبعد موافقتك نشتريه ونوصله إليك، وتدفع عند الاستلام."
-              },
-              {
-                question: "هل يمكن إلغاء الطلب؟",
-                answer: "نعم، يمكنك إلغاء الطلب في أي وقت قبل أن نشتري الكتاب. بعد الشراء، لا يمكن الإلغاء إلا في حالات استثنائية."
-              },
-              {
-                question: "ماذا لو كان الكتاب غير متوفر بالسعر المتوقع؟",
-                answer: "إذا كان سعر الكتاب مختلفاً عن المتوقع، سنرسل لك السعر الفعلي وصورة الكتاب قبل الشراء. لن نشتري أي كتاب بدون موافقتك على السعر النهائي."
-              },
-              {
-                question: "هل توصلون خارج الجزائر العاصمة؟",
-                answer: "حالياً نوصل فقط داخل الجزائر العاصمة وضواحيها. قد نتوسع لمناطق أخرى في المستقبل حسب الطلب."
-              },
-              {
-                question: "كم يستغرق البحث عن الكتاب؟",
-                answer: "عادة ما نجد الكتاب ونرسل لك صورته في نفس اليوم أو اليوم التالي، حسب ازدحام المعرض وصعوبة البحث."
-              }
-            ].map((faq, index) => (
+  {
+    "question": "هل تضمنون توفر الكتاب المطلوب؟",
+    "answer": "نبذل قصارى جهدنا للبحث عن الكتاب في جميع أجنحة المعرض، ولكن لا يمكننا الضمان المطلق حيث يعتمد ذلك على توفر الكتاب في دور النشر. في حالة عدم العثور عليه، سنخبرك فوراً ونقترح بدائل إن أمكن."
+  },
+  {
+    "question": "كيف يتم الدفع؟",
+    "answer": "نحن نعتمد نظام الدفع المسبق عبر التحويل البنكي. بعد العثور على الكتاب وإرسال صورته والسعر النهائي، نقوم بشرائه فور تأكيد تحويل المبلغ إلى حسابنا البنكي."
+  },
+  {
+    "question": "هل يمكن إلغاء الطلب؟",
+    "answer": "يمكنك إلغاء الطلب في أي وقت قبل إتمام عملية الدفع. بعد التحويل البنكي وشراء الكتاب، لا يمكن استرجاع المبلغ إلا في حالات استثنائية وبعد التنسيق مع إدارة المعرض."
+  },
+  {
+    "question": "ماذا لو كان السعر مختلفاً عن المتوقع؟",
+    "answer": "نرسل لك صورة الكتاب والسعر الفعلي قبل أي عملية دفع. لن نتم الشراء دون موافقتك النهائية على السعر والمبلغ الإجمالي."
+  },
+  {
+    "question": "هل التوصيل يشمل جميع الولايات؟",
+    "answer": "نعم، نوصل إلى جميع ولايات الجزائر الـ58. يتم إرسال الطلبات الجاهزة يومياً ومدة التوصيل من 24 ساعة إلى 72 ساعة حسب المنطقة."
+  },
+  {
+    "question": "كم تستغرق مدة التوصيل؟",
+    "answer": "نقوم بإرسال الطلبات الجاهزة يومياً، ومدة التوصيل تتراوح بين 24 ساعة إلى 72 ساعة كحد أقصى حسب الولاية والمنطقة."
+  },
+  {
+    "question": "كيف يتم حساب رسوم الخدمة؟",
+    "answer": "رسوم الخدمة تختلف حسب عدد الكتب: كتاب واحد 300 دج، من 5 إلى 9 كتب 500 دج، 10 كتب أو أكثر 1000 دج. بالإضافة إلى سعر الكتب وتكلفة التوصيل."
+  },
+  {
+    "question": "ماذا عن الكتب النادرة أو الصعبة؟",
+    "answer": "نتخصص في البحث عن الكتب النادرة والصعبة، وقد نطلب منك مهلة أطول للعثور عليها. رسوم الخدمة تبقى كما هي بغض النظر عن صعوبة البحث."
+  },
+  {
+    "question": "متى تبدأ عملية التوصيل؟",
+    "answer": "نبدأ في توصيل الطلبات مباشرة بعد تأكيد الشراء وإتمام الدفع. الطلبات الجاهزة يتم إرسالها يومياً وتصل خلال 24-72 ساعة حسب موقعك الجغرافي."
+  }
+].map((faq, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
                 <h3 className="text-xl font-bold mb-4 text-amber-900 flex items-start gap-3">
                   <span className="text-amber-600 flex-shrink-0">س:</span>
@@ -433,11 +449,11 @@ function App() {
               لا تفوت فرصة الحصول على الكتب التي تحتاجها من معرض الجزائر الدولي للكتاب
             </p>
             <div className="flex flex-wrap justify-center gap-6 mb-12">
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="bg-white text-amber-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-amber-50 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3">
+              <a href="https://wa.me/message/QCUF4ZO63FRCE1" target="_blank" rel="noopener noreferrer" className="bg-white text-amber-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-amber-50 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3">
                 <MessageCircle className="w-6 h-6" />
                 تواصل عبر واتساب
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white text-amber-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-amber-50 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3">
+              <a href="https://facebook.com/abderrahmanebennaceur0" target="_blank" rel="noopener noreferrer" className="bg-white text-amber-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-amber-50 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3">
                 <Facebook className="w-6 h-6" />
                 تواصل عبر فيسبوك
               </a>
@@ -457,16 +473,16 @@ function App() {
             <h3 className="text-2xl font-bold mb-4">خدمة توصيل الكتب من معرض الجزائر الدولي</h3>
             <p className="text-amber-200 mb-6">نجلب لك المعرفة إلى باب منزلك</p>
             <div className="flex justify-center gap-6 mb-8">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
+              <a href="https://facebook.com/abderrahmanebennaceur0" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
                 <Facebook className="w-8 h-8" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
+              <a href="https://instagram.com/abderrahmanebennaceur1/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
                 <Instagram className="w-8 h-8" />
               </a>
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
+              <a href="https://wa.me/message/QCUF4ZO63FRCE1" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
                 <MessageCircle className="w-8 h-8" />
               </a>
-              <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
+              <a href="https://t.me/abderrahmanebennaceur/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">
                 <TelegramIcon className="w-8 h-8" />
               </a>
             </div>

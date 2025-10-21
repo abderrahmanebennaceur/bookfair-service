@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "cairo";
+    src: local('cairo-medium'),
+    url(/src/fonts/Cairo-Medium.ttf);
+}
+
+body {
+    font-family: cairo;
+}
