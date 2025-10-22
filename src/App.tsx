@@ -155,8 +155,8 @@ function App() {
                     <p className="text-gray-600 mb-2">تختلف حسب عدد الكتب</p>
                     <div className="space-y-1">
                       <p className="text-amber-700 font-semibold">كتاب واحد: 300 دج</p>
-                      <p className="text-amber-700 font-semibold">من 5 إلى 9 كتب: 500 دج</p>
-                      <p className="text-amber-700 font-semibold">10 كتب أو أكثر: 1000 دج</p>
+                      <p className="text-amber-700 font-semibold">من 2 إلى 5 كتب: 500 دج</p>
+                      <p className="text-amber-700 font-semibold">أكثر من 5 كتب 1000 دج</p>
                     </div>
                   </div>
                 </div>
