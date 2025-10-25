@@ -1,4 +1,5 @@
 import { BookOpen, Send, Search, Package, Users, MapPin, Calendar, Clock, Star, Facebook, Instagram, MessageCircle, Send as TelegramIcon, Truck } from 'lucide-react';
+import profile from '/assets/profile.jpg'; 
 
 function App() {
   return (
@@ -44,8 +45,9 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative">
-                  <div className="w-64 h-64 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center shadow-2xl">
-                    <BookOpen className="w-32 h-32 text-white" />
+                  <div className="">
+                    {/* <BookOpen className="w-32 h-32 text-white" /> */}
+                    <img className='w-64 h-64 rounded-full object-cover border-2 border-amber-500 shadow-lg hover:shadow-xl transition-all duration-300' src={profile} alt="Logo" />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg">
                     <Star className="w-8 h-8 text-amber-600 fill-amber-600" />
@@ -153,11 +155,20 @@ function App() {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-2 text-gray-800">رسوم الخدمة</h3>
                     <p className="text-gray-600 mb-2">تختلف حسب عدد الكتب</p>
-                    <div className="space-y-1">
-                      <p className="text-amber-700 font-semibold">كتاب واحد: 300 دج</p>
-                      <p className="text-amber-700 font-semibold">من 2 إلى 5 كتب: 500 دج</p>
-                      <p className="text-amber-700 font-semibold">أكثر من 5 كتب 1000 دج</p>
-                    </div>
+                    <div className="space-y-2">
+    <div className="flex justify-between items-center">
+      <span className="text-gray-700">كتاب واحد:</span>
+      <span className="text-amber-700 font-semibold">200 دج</span>
+    </div>
+    <div className="flex justify-between items-center">
+      <span className="text-gray-700">أكثر من 3 كتب:</span>
+      <span className="text-amber-700 font-semibold">500 دج</span>
+    </div>
+    <div className="flex justify-between items-center">
+      <span className="text-gray-700">أكثر من 5 كتب:</span>
+      <span className="text-amber-700 font-semibold">1000 دج</span>
+    </div>
+  </div>
                   </div>
                 </div>
 
@@ -322,7 +333,7 @@ function App() {
               },
               {
                 name: "سارة قاسم",
-                text: "كنت أريد كتاباً نادراً من ناشر معين، ورغم الصعوبة وجده! خدمة رائعة وتواصل ممتاز طوال الوقت."
+                text: "طلبت 3 كتب من معرض الجزائر للكتاب، والخدمة كانت سريعة واحترافية. التواصل كان واضحاً طوال الوقت، وتلقيت كتبي في الوقت المحدد. شكراً على المجهود!"
               },
               {
                 name: "ياسين حمزة",
